@@ -8,30 +8,30 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <div>
-        <h1>Cadastro de DEVs</h1>
-        <p>Complete suas informções</p>
+    <div class="campo">
+        <h1 id="titulo">Cadastro de DEVs</h1>
+        <p id="subtitulo">Complete suas informções</p>
         <br>
     </div>
 
     <form>
-        <fieldset>
-            <div>
-                <label>Nome</label>
-                <input type="text" name="nome" id="nome">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
             </div>
 
-            <div>
-                <label>Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
 
-            <div>
-                <label>Email</label>
-                <input type="email" name="email" id="email">
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
             </div>
 
-            <div>
+            <div class="campo">
                 <label>De qual lado da aplicação você desenvolve?</label>
                 <label>
                     <input type="radio" name="devweb" value="frontend" checked>Front-End
@@ -44,7 +44,7 @@
                 </label>
             </div>
 
-            <div>
+            <div class="campo">
                 <label>Senioridade</label>
                 <select id="senioridade">
                 <option selected disabled value="">Selecione</option>
@@ -54,7 +54,7 @@
                 </select>
             </div>
 
-            <fieldset>
+            <fieldset class="grupo">
                 <div>
                     <label>Selecione as tecnologias que utiliza:</label>
                     <input type="checkbox" id="tecnologia1" value="HTML">
@@ -73,7 +73,7 @@
                     <label for="tecnologia7">Java</label>
                 </div>
 
-                <div>
+                <div class="campo">
                     <br>
                     <label>Conte um pouco da sua experiência:</label>
                     <textarea row="6" style="width: 26em;" id="experiencia"></textarea>

@@ -1,8 +1,10 @@
-* {
+/* Todos os elementos da página */
+*{
     margin: 0;
     padding: 0;
 }
 
+/*  Elementos com ID "titulo" */
 #titulo {
     font-family: sans-serif;
     color: #380b61;
@@ -12,6 +14,10 @@
     font-family: sans-serif;
     color: #380b61;
     margin-left: 10%;
+}
+
+#check{
+    display: inline-block;
 }
 
 fieldset {
@@ -29,7 +35,18 @@ body {
 }
 
 input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
     border-radius: 5px;
+}
+
+.grupo::before, .grupo::after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
 }
 
 .campo {
@@ -47,11 +64,11 @@ fieldset.grupo .campo {
     margin-right: 1em;
 }
 
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
     border: 1px solid #59429d;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display: inline-block;
+    display: block;
 }
 
 .campo select option {
@@ -75,4 +92,19 @@ fieldset.grupo .campo {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+
+.botao, select{
+    cursor: pointer;
+}
+
+#check {
+   display: inline-block; 
 }
